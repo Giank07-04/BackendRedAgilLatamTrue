@@ -1,0 +1,130 @@
+
+@media (min-width: 1024px) {
+  .view-responsiv {
+    display: block;
+  }
+
+  .d-item-none {
+    display: none;
+  }
+}
+
+@media (max-width: 1130px) {
+  .view-responsiv {
+    display: none;
+  }
+
+  .d-item-block {
+    display: none;
+  }
+  .d-item-none {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  #header .btn-custom {
+    padding: 18px 14px 18px 14px;
+  }
+}
+
+@media (max-width: 770px) {
+  #wp-post {
+    .col-left-6 {
+        width: 50% !important;
+        display: inline-block !important;
+      }
+      .col-right-6 {
+        width: 50% !important;
+        float: right !important;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+  }
+  .expand-left {
+    width: 80% !important;
+    display: inline-block !important;
+  }
+  .expand-right {
+    width: 19% !important;
+    float: right !important;
+    padding-right: 15px;
+  }
+
+  #subscribe {
+    .mf-btn-wraper {
+      top: 20px;
+      right: 0px;
+      position: relative;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .res-height-auto {
+    &.vh-80,
+    &.vh-70,
+    &.vh-60,
+    &.vh-50,
+    &.vh-90 {
+      height: auto !important;
+    }
+  }
+
+  #menu {
+    .col-resp-1 {
+      max-width: 30%;
+    }
+    .col-resp-2,.col-resp-3 {
+      display: none;
+    }
+    .col-resp-4 {
+      max-width: 70%;
+      .open-menu {
+        background-color: #273c66 !important;
+        padding: 9px 10px 4px 10px !important;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #273c66 !important;
+          padding: 9px 10px 4px 10px !important;
+        }
+      }
+    }
+    .content-social {
+      display: inline-flex !important;
+      .col-left {
+        display: inline-block;
+        border-right: 1px solid white;
+        max-width: 50%;
+      }
+      .col-right {
+        display: inline-block;
+        max-width: 49%;
+        padding-top: 18px;
+      }
+    }
+  }
+  .sub-page.page-course .banner .banner-title{
+    padding:0px;
+  }
+}
+
+@media (max-width: 410px) {
+  #initial .title{
+    font-size: 40px;
+    line-height: initial;
+    text-align: center;
+  }
+  .btn-custom{
+    font-size: 13px;
+  }
+  .jumbotron{
+    text-align: center;
+  }
+  #testimonials .owl-carousel .item {
+    width: 330px;
+  }
+  
+}

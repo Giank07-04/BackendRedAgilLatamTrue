@@ -1,0 +1,939 @@
+/** @format */
+$menu-size: 58px;
+.sub-page {
+  #header-background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    color: #ffffff;
+  }
+  .container-title-page {
+    height: 100%;
+  }
+  &.page-course {
+    .banner {
+      background-image: url("../images/courses/lego_sirious_play.jpg");
+      .container-title-page {
+        height: 100%;
+      }
+      .banner-title {
+        color: white;
+        background-color: Transparent;
+        padding: 30px 80px;
+        text-transform: uppercase;
+        font-size: 3em;
+        text-shadow: 0 0 16px #00000094;
+        line-height: 44px;
+        font-weight: 700;
+        margin-bottom: 0;
+        b {
+          display: block;
+          color: var(--global-color-green-white-2);
+        }
+      }
+    }
+    .course-sidebar {
+      height: 100%;
+      .widget-title {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      .course-single-info {
+        background-color: var(--global-color-text);
+        border: 0;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+      }
+      .course-intro {
+        ul {
+          padding: 0;
+          li {
+            list-style: none;
+            font-size: 14px;
+            line-height: 48px;
+            color: #fff;
+            display: block;
+            border-bottom: 1px solid #f2f2f9;
+            clear: both;
+            overflow: hidden;
+            i {
+              color: var(--global-color-green-white-2);
+              margin-right: 6px;
+            }
+            span {
+              float: right;
+            }
+            &:last-child {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+      .course-related {
+        display: none;
+      }
+      .course-widget {
+        -webkit-box-shadow: 0px 30px 50px 0px var(--global-color-text) 14;
+        box-shadow: 0px 30px 50px 0px var(--global-color-text) 14;
+        /* border: 1px dashed #dedede; */
+        padding: 40px;
+        margin-bottom: 50px;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -ms-border-radius: 16px;
+      }
+      .course-enroll {
+        margin-bottom: -55px;
+        text-align: center;
+      }
+      .lp-button {
+        padding: 0 30px !important;
+        border-radius: 36px;
+        -webkit-border-radius: 36px;
+        color: #fff;
+        border: 0px;
+        line-height: 45px;
+        padding: 0 12px;
+        height: 45px;
+        &:focus {
+          outline: 0px;
+        }
+      }
+    }
+    .card-content {
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      .titulo-cursos {
+        padding: 21px 20px;
+        font-size: 22px;
+        border-bottom: 1px solid #eaeaea;
+        margin-top: 0;
+        color: var(--global-color-green-white-2);
+        font-weight: 700;
+      }
+      .title-object {
+        color: #222222;
+        font-size: 24px;
+        margin: 20px 0px;
+        font-weight: 600;
+      }
+      .card-item {
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        &.co-single-instructor {
+          .co-instructor-head {
+            margin-bottom: 25px;
+          }
+          .co-instructors-socials {
+            padding: 0;
+            list-style-type: none;
+            a {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -ms-border-radius: 50%;
+              display: inline-block;
+              border: 1px solid #eaeaea;
+              text-align: center;
+              line-height: 30px;
+              font-size: 14px;
+              color: var(--global-color-text);
+            }
+          }
+          .co-instructor-title {
+            margin-bottom: 5px;
+            font-size: 24px;
+            font-weight: 700;
+            a {
+              color: var(--global-color-text);
+            }
+          }
+          .media {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            .co-instructor-thumb {
+              margin-right: 30px;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -ms-border-radius: 50%;
+              overflow: hidden;
+            }
+          }
+        }
+
+        .curriculum-content {
+          .card-body {
+            padding: 5px;
+          }
+          .curriculmn-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: var(--global-color-text);
+            letter-spacing: -0.2px;
+            display: inline-block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            &:after {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              margin-left: 15px;
+              color: var(--global-color-green-white-2);
+            }
+            &[aria-expanded="true"]:after {
+              content: "";
+            }
+            &[aria-expanded="false"]:after {
+              content: "";
+            }
+          }
+          .curricolumn-duration {
+            float: right;
+          }
+          i.fa-lock {
+            display: none;
+          }
+          .curricolumn-preview {
+            background: var(--global-color-green-white-2);
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -ms-border-radius: 12px;
+            font-size: 12px;
+            margin-left: 10px;
+
+            display: none;
+          }
+          li a {
+            font-size: 16px;
+            color: var(--global-color-text);
+            line-height: 26px;
+            i {
+              color: var(--global-color-green-white-2);
+              margin-right: 6px;
+            }
+          }
+        }
+        .turitor-list {
+          list-style-type: none;
+          padding: 0;
+          text-align: left;
+          li {
+            display: block;
+            padding-left: 40px;
+            position: relative;
+            h3 {
+              font-size: 20px;
+              margin: 0px 0px 20px 0px;
+            }
+            &:before {
+              position: absolute;
+              left: 7px;
+              top: 5px;
+              width: 1px;
+              height: 100%;
+              content: "";
+              background: #eaeaea;
+            }
+            &:after {
+              position: absolute;
+              left: 0px;
+              top: 5px;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -ms-border-radius: 50%;
+              content: "";
+              background: var(--global-color-green-white-2);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.page-about {
+    .banner {
+      background-image: url("../images/about-us.jpg");
+      opacity: 0.8;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #45649273;
+      }
+
+      h1 {
+        font-size: 48px;
+        line-height: 52px;
+        font-weight: 600;
+        text-shadow: 0px 0px 10px #00000069;
+      }
+    }
+    #actions {
+      .container-cards {
+        .icon-img {
+          max-width: 150px;
+          padding: 12px;
+          transition: 0.5s;
+          filter: contrast(0%);
+          &:hover {
+            filter: invert(77%) sepia(31%) saturate(2648%) hue-rotate(436deg)
+              brightness(94%) contrast(67%);
+          }
+        }
+        .container-image {
+          width: 90px;
+          border: 4px solid #818181;
+          border-radius: 80px;
+          transition: 0.5s;
+          &:hover {
+            border: 4px solid #38c85d;
+          }
+        }
+        .card {
+          align-items: center;
+          padding-top: 2em;
+          box-shadow: 0px 0px 10px 0px #0000002b;
+        }
+        .card-title {
+          color: #818181;
+          padding: 0;
+          margin: 0;
+          line-height: 1;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &.page-contact {
+    .banner {
+      background-image: url(https://redagilelatam.com/wp-content/uploads/2020/11/IMG_5122-scaled.jpg);
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        opacity: 0.8;
+      }
+    }
+    .border-right {
+      border-style: solid;
+      border-width: 0px 1px 0px 0px;
+      border-color: #d4d8e0;
+      border-radius: 0px 0px 0px 0px;
+    }
+    .content-title {
+      padding-bottom: 4em;
+      padding-top: 4em;
+
+      .section-title {
+        text-align: left;
+        color: #fe7955;
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: -0.42px;
+      }
+      .section-coment {
+        padding: 14px 0px 0px 0px;
+        color: var(--global-color-text);
+      }
+    }
+
+    .send-message {
+      border-style: dashed;
+      border-width: 1px 1px 1px 1px;
+      border-color: #e8e8e8;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s,
+        box-shadow 0.3s;
+      margin: 0px 0px 0px 15px;
+      padding: 50px 40px 35px 40px;
+      .card-body {
+        padding: 0px;
+        .card-title {
+          color: #333333;
+          font-size: 24px;
+          line-height: 26px;
+          letter-spacing: -0.24px;
+        }
+      }
+      form {
+        .form-group {
+          position: relative;
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+        input {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: -0.1px;
+          color: #aaaaaa;
+          border-style: solid;
+          border-width: 1px 1px 1px 1px;
+          border-color: #e5e5e5;
+          padding: 12px 25px 12px 25px;
+          border-radius: 6px;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          background: none;
+          background-color: #fafafa;
+          box-shadow: none;
+          box-sizing: border-box;
+        }
+
+        .metform-btn {
+          padding: 15px 30px 15px 30px;
+          margin-bottom: 10px;
+          font-family: "Lato", Sans-serif;
+          font-size: 14px;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: #ffffff;
+          background-color: #273c66;
+          border-style: none;
+          border-radius: 6px 6px 6px 6px;
+          display: inline-block;
+          width: 100%;
+          transition: all 0.4s;
+          &:hover {
+            color: #ffffff;
+            background-color: #0eb582;
+          }
+        }
+      }
+    }
+    #cards {
+      .card {
+        margin: 0px 10px;
+        .no-gutters {
+          padding: 40px 20px 30px 20px;
+        }
+        .card-body {
+          padding: 0px;
+        }
+        .card-title {
+          margin: 0px 0px 5px 0px;
+          padding: 0px 0px 0px 0px;
+          color: #777777;
+          font-family: "Rubik", Sans-serif;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: -0.17px;
+        }
+        .card-icon {
+          padding: 11px 11px 11px 11px;
+          width: 55px;
+          margin: 0px 27px 0px 0px;
+          height: 55px;
+          border-style: solid;
+          border-width: 5px 5px 5px 5px;
+          border-color: #d2df64;
+          border-radius: 50px 50px 50px 50px;
+          i {
+            font-size: 20px;
+            color: #273c66;
+          }
+        }
+        p {
+          color: var(--global-color-text);
+          font-family: "Roboto", Sans-serif;
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  &.page-article {
+    .banner {
+      background-image: url(https://redagilelatam.com/wp-content/uploads/2020/09/articulos.jpg);
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #456492ad;
+        opacity: 0.8;
+      }
+    }
+    .card-article {
+      .card-title {
+        a {
+          text-decoration: none;
+          outline: 0;
+          color: #000;
+          margin-top: 0;
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom: 30px;
+        }
+      }
+      p {
+        color: #8d8d8d;
+        margin-bottom: 35px;
+      }
+    }
+  }
+  &.page-customers {
+    .banner {
+      /* background-image: url("../images/customers.jpg"); */
+      h1 {
+        color: var(--global-color-text);
+      }
+    }
+    #container-body {
+      background-color: #f7f9fb;
+    }
+    .card {
+      border: 0px;
+    }
+  }
+  &.page-consultancy {
+    .banner {
+      background-image: url("../images/bg-4.jpg");
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff73;
+      }
+      .card-body,
+      h1,
+      p,
+      a {
+        color: var(--global-color-text);
+      }
+      .card {
+        .card-header {
+          padding: 0px;
+          .btn-link {
+            padding: 0.75rem 1.25rem;
+            font-size: 22px;
+            font-weight: 700;
+            transition: 0.3s;
+            i {
+              float: right;
+              width: 40px;
+              height: 40px;
+              text-align: center;
+              padding: 13px 12px 12px 13px;
+              border-radius: 50%;
+              font-size: 16px;
+            }
+            &[aria-expanded="true"] {
+              font-size: 26px;
+              background-color: #0eb582;
+              color: #ffffff;
+              border-radius: 6px 6px 0px 0px;
+              i {
+                background: #273c66;
+              }
+            }
+          }
+        }
+      }
+      img {
+        width: 90%;
+      }
+    }
+  }
+  &.page-course-buy {
+    .checkout {
+      width: 100%;
+    }
+
+    .message-politics {
+      border-top: 1px solid rgb(177, 177, 177);
+    }
+    #content-collapse-add {
+      .card {
+        .card-header {
+          //===========
+          padding: 1em 0em 0em 0em;
+          margin: 0 0 1em;
+          border-top: 3px solid #1e85be;
+          border-bottom: 0px;
+          position: relative;
+          background-color: #fff;
+          .btn-link {
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--global-color-text);
+            transition: 0.3s;
+            span {
+              color: var(--global-color-green-white-2);
+            }
+            i {
+              color: #1e85be;
+              font-size: 20px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    #content-collapse-buy {
+      .card {
+        border: 0px;
+        .card-body {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+        .card-header {
+          padding-top: 0px;
+          padding-bottom: 0px;
+          border: 0px;
+          position: relative;
+          background-color: #fff;
+          h5 {
+            font-size: 16px;
+            font-weight: 100 !important;
+          }
+          .mercado-pago {
+            width: 100px;
+          }
+        }
+      }
+      .content-message {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1em;
+        margin: 1em 0;
+        font-size: 0.92em;
+        border-radius: 2px;
+        line-height: 1.5;
+        background-color: #dfdcde;
+        color: #515151;
+        &:before {
+          content: "";
+          display: block;
+          border: 1em solid #dfdcde;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-top-color: transparent;
+          position: absolute;
+          top: -0.75em;
+          left: 0;
+          margin: -1em 0 0 2em;
+        }
+      }
+    }
+  }
+  &.page-not-found {
+    .bannet-title {
+      font-size: 8em;
+    }
+    .btn-back-home {
+      color: var(--global-color-green-white-2);
+    }
+  }
+  &.page-login {
+    .card {
+      .card-body {
+        padding: 20px 60px 30px 60px;
+      }
+      .card-title {
+        margin: 20px 0px 40px 0px;
+      }
+    }
+    .content-banner {
+      color: var(--global-color-text);
+    }
+    .btn-remember {
+      color: var(--global-color-green-white-2);
+    }
+    .btn-custom-green {
+      width: 100%;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      
+    }
+    .btn-face{
+     background-color: #3b5998;
+     i{
+      font-size: 16px;
+     }  
+    }
+  }
+  #menu {
+    //height: $menu-size;
+    background-color: #2c2c;
+    .content-icons {
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      height: $menu-size;
+      display: flex;
+      .list-items {
+        margin: revert;
+      }
+      li {
+        display: inline-block;
+        list-style-type: none;
+        a {
+          font-size: 20px;
+          line-height: 36px;
+          color: #fff;
+          padding: 0.5rem 0.5rem;
+        }
+      }
+      .facebook:hover {
+        color: #3b5998;
+      }
+      .instagram:hover {
+        color: #eb4923;
+      }
+      .linkedin:hover {
+        color: #0077b5;
+      }
+    }
+    .btn-go-campus {
+      color: var(--global-color-white);
+      font-size: 13px;
+      font-weight: 400;
+      margin: auto auto;
+      &:hover {
+        color: var(--global-color-blue);
+      }
+    }
+    .open-menu {
+      padding: 4px 7px 5px 7px;
+      position: relative;
+      background-color: transparent;
+      box-shadow: none !important;
+      display: inline;
+      border: 0px;
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: transparent !important;
+        border: 0px;
+        box-shadow: none !important;
+      }
+      i {
+        font-size: 22px;
+      }
+    }
+    .content-btn-campus {
+      height: 58px;
+      display: inline-flex;
+    }
+    .logo {
+      max-width: 150px;
+      padding: 15px 0px 15px 0px;
+    }
+  }
+  //ESTILOS GENERALES
+  .btn-custom-green {
+    border-radius: 36px;
+    font-weight: 700;
+    background: #0eb582;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 30px 14px;
+  }
+
+  .content-banner {
+    padding-top: 30px;
+  }
+  .detalles-curso {
+    max-width: 400px;
+    background-color: #000000c7;
+    padding: 20px;
+    margin: auto auto;
+    position: relative;
+    color: #ff0076;
+    text-align: center;
+  }
+  .title-col-12-center {
+    margin: 12px 0px 40px 0px;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 52px;
+  }
+  .body-section {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.16px;
+  }
+  .owl-theme-custom {
+    .item {
+      //width: 196px;
+      height: 200px;
+      text-align: center;
+      max-width: 200px;
+      margin: auto auto;
+
+      align-items: center;
+      display: flex;
+    }
+  }
+  #cards {
+    .card {
+      border: 0px;
+    }
+    .card-footer {
+      border: 0px;
+      position: relative;
+      margin-bottom: 20px;
+      background-color: transparent;
+    }
+    .card-body {
+      padding: 40px 40px 30px 40px;
+      position: relative;
+    }
+    .col {
+      padding-right: 9px;
+      padding-left: 9px;
+    }
+    .card-title {
+      color: #666666;
+      padding: 0;
+      margin-bottom: 20px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .card-text {
+      color: #3571ad;
+      font-weight: 300;
+      line-height: 1;
+    }
+    .btn-card-custom {
+      display: inline-block;
+      line-height: 1;
+      font-size: 15px;
+      padding: 12px 24px;
+      -webkit-border-radius: 3px;
+      color: #fff;
+      fill: #fff;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      font-weight: 500;
+      width: 100%;
+      background-color: #5090d7;
+      border-radius: 20px 20px 20px 20px;
+      &:hover {
+        background-color: #20b3bb;
+      }
+    }
+
+    .card {
+      box-shadow: 0px 0px 10px 0px #00000045;
+      transition: background 0.3s, border 0.3s, border-radius 0.3s,
+        box-shadow 0.3s;
+      border-radius: 20px 20px 20px 20px;
+      overflow: hidden;
+
+      &:hover > .background-overlay {
+        background-size: 150% auto;
+        opacity: 0.5;
+      }
+
+      .item-card {
+        z-index: 2;
+        padding: 40px 40px 40px 40px;
+      }
+      .background-overlay {
+        background-image: url("../images/bg-card.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 120% auto;
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      }
+    }
+  }
+  .backgroundAnimateColors {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationColors 60s ease infinite;
+    -moz-animation: AnimationColors 60s ease infinite;
+    -o-animation: AnimationColors 60s ease infinite;
+    animation: AnimationColors 60s ease infinite;
+
+    @-webkit-keyframes AnimationColors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @-moz-keyframes AnimationColors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @-o-keyframes AnimationColors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes AnimationColors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+}

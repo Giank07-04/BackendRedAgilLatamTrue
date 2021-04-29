@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorate="~{master.html}">
+<head>
+    <title>Nueva persona</title>
+</head>
+<body>
+
+<div layout:fragment="contenido">
+    <h1>Inscripcion de Alumno</h1>
+
+    <form th:action="@{''}" th:object="${alumno}" method="post">
+
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input id="nombre" type="text" placeholder="Nombre" class="form-control" th:field="*{nombre}"
+                   th:errorclass="is-invalid">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="codcli" class="form-label">Identificacion</label>
+            <input id="codcli" type="text" placeholder="codcli" class="form-control" th:field="*{codcli}"
+                   th:errorclass="is-invalid">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('codcli')}" th:errors="*{codcli}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="ndocumento" class="form-label">Numero de documento</label>
+            <input id="ndocumento" type="text" placeholder="ndocumento" class="form-control" th:field="*{ndocumento}"
+                   th:errorclass="is-invalid">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('ndocumento')}" th:errors="*{ndocumento}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electronico</label>
+            <input id="email" type="text" placeholder="email" class="form-control" th:field="*{email}"
+                   th:errorclass="is-invalid">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+        </div>
+
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Tel/Cel.</label>
+            <input id="telefono" type="text" placeholder="telefono" class="form-control" th:field="*{telefono}"
+                   th:errorclass="is-invalid">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('telefono')}" th:errors="*{telefono}"></div>
+        </div>
+
+        <div class="mb-3">
+            <label for="cursointeres" class="form-label">Cursod de Interes</label>
+            <select id="cursointeres" class="form-control" th:field="*{cursointeres}" th:errorclass="is-invalid">
+                <option value="Scrum">Scrum</option>
+                <option value="App">App</option>
+                <option value="Desing Thinking">Desing Thinking</option>
+            </select>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('cursointeres')}" th:errors="*{cursointeres}"></div>
+        </div>
+
+        <div class="mb-3">
+           <label for="empresa" class="form-label">Empresa</label>
+           <input id="empresa" type="text" placeholder="empresa" class="form-control" th:field="*{empresa}"
+               th:errorclass="is-invalid">
+           <div class="invalid-feedback" th:if="${#fields.hasErrors('empresa')}" th:errors="*{empresa}"></div>
+        </div>
+
+        <div class="mb-3">
+            <label for="cargo" class="form-label">Cargo.</label>
+            <input id="cargo" type="text" placeholder="cargo" class="form-control" th:field="*{cargo}"
+                   th:errorclass="is-invalid">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('cargo')}" th:errors="*{cargo}"></div>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="estado" class="form-label">Estado</label>
+            <select id="estado" class="form-control" th:field="*{estado}" th:errorclass="is-invalid">
+                <option value="ganado">Ganado</option>
+                <option value="negociacion">Negociacion</option>
+                <option value="informacion">Informacion</option>
+            </select>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('estado')}" th:errors="*{estado}"></div>
+        </div>
+
+        <div class="mb-3">
+            <label for="comoseentero" class="form-label">Como se entero</label>
+            <select id="comoseentero" class="form-control" th:field="*{comoseentero}" th:errorclass="is-invalid">
+                <option value="Redes Sociales">Redes Sociales</option>
+                <option value="Recomendacion">Recomendacion</option>
+                <option value="Publicidad">Publicidad</option>
+            </select>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('comoseentero')}" th:errors="*{comoseentero}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="asesor" class="form-label">Asesor</label>
+            <input id="asesor" type="number" placeholder="asesor" class="form-control" th:field="*{asesor}"
+                   th:errorclass="is-invalid">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('asesor')}" th:errors="*{asesor}"></div>
+        </div>
+
+        <button type="submit" class="btn btn-success">Agregar</button>
+    </form>
+</div>
+
+</body>
+</html>
